@@ -87,7 +87,9 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         type="button"
         ref={ref}
-        className={`${getButtonClasses(size, variant, color, actualRoundness, actualAppearance)} ${className}`}
+        className={clsx(getButtonClasses(size, variant, color, actualRoundness, actualAppearance), className, {
+          "btn-uyir-primary": variant === ButtonVariants.Primary,
+        })}
         {...props}
       >
         {children}
