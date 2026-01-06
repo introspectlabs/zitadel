@@ -51,24 +51,3 @@ html {
     background-position: -200% 0;
   }
 }
-
-@layer components {
-  /* Uyir Card Design */
-  .card-uyir {
-    @apply rounded-[24px] border border-[#efe7ff] bg-white/95 p-6 shadow-[0_20px_60px_rgba(108,92,231,0.12)] backdrop-blur-md sm:p-8;
-  }
-
-  /* Uyir Input Design */
-  .input-uyir {
-    @apply w-full rounded-full border-2 border-[#ebeaed] bg-transparent px-6 py-3 text-sm text-[#1e0e62] placeholder:text-[#15143966] focus:border-[#6c5ce7] focus:outline-none focus:ring-2 focus:ring-[#6c5ce7]/40;
-  }
-
-  /* Uyir Button Design */
-  .btn-uyir-primary {
-    @apply flex w-full items-center justify-center rounded-full bg-[#6c5ce7] px-6 py-3 text-sm font-semibold text-white shadow-[0_15px_35px_rgba(108,92,231,0.3)] transition hover:bg-[#5a4bcf] disabled:cursor-not-allowed disabled:opacity-70;
-  }
-
-  .btn-uyir-secondary {
-    @apply text-sm font-medium text-[#6c5ce7] underline-offset-4 hover:underline;
-  }
-}

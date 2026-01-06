@@ -50,7 +50,7 @@ export function DynamicTheme({
 
             return (
               <div className="relative mx-auto w-full max-w-[1100px] py-4 px-8">
-                <Card className="card-uyir">
+                <Card>
                   <div className="flex min-h-[400px]">
                     {/* Left side: First child + branding */}
                     <div className="flex w-1/2 flex-col justify-center p-4 lg:p-8 bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20">
@@ -58,8 +58,8 @@ export function DynamicTheme({
                         {/* Logo and branding */}
                         {branding && (
                           <Logo
-                            lightSrc={"/logo/uyir-logo.svg"}
-                            darkSrc={"/logo/uyir-logo.svg"}
+                            lightSrc={branding.lightTheme?.logoUrl}
+                            darkSrc={branding.darkTheme?.logoUrl}
                             height={150}
                             width={150}
                           />
@@ -102,8 +102,8 @@ export function DynamicTheme({
                     <div className="relative flex flex-row items-center justify-center -mb-4">
                       {branding && (
                         <Logo
-                          lightSrc={"/logo/uyir-logo.svg"}
-                          darkSrc={"/logo/uyir-logo.svg"}
+                          lightSrc={branding.lightTheme?.logoUrl}
+                          darkSrc={branding.darkTheme?.logoUrl}
                           height={150}
                           width={150}
                         />
