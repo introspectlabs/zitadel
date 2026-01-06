@@ -67,7 +67,7 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
         <input
           suppressHydrationWarning
           ref={ref}
-          className={clsx(styles(!!error, !!disabled, actualRoundness), props.className)}
+          className={styles(!!error, !!disabled, actualRoundness)}
           defaultValue={defaultValue}
           required={required}
           disabled={disabled}
