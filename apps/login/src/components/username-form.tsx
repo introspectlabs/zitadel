@@ -108,6 +108,7 @@ export function UsernameForm({
           label={inputLabel}
           data-testid="username-text-input"
           suffix={suffix}
+          className="input-uyir" // Apply Uyir style
         />
         {allowRegister && (
           <button
