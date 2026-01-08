@@ -58,8 +58,8 @@ export function DynamicTheme({
                         {/* Logo and branding */}
                         {branding && (
                           <Logo
-                            lightSrc={branding.lightTheme?.logoUrl}
-                            darkSrc={branding.darkTheme?.logoUrl}
+                            lightSrc={branding.lightTheme?.logoUrl || "/logo/uyir-logo.svg"}
+                            darkSrc={branding.darkTheme?.logoUrl || branding.lightTheme?.logoUrl || "/logo/uyir-logo.svg"}
                             height={150}
                             width={150}
                           />
@@ -102,8 +102,8 @@ export function DynamicTheme({
                     <div className="relative flex flex-row items-center justify-center -mb-4">
                       {branding && (
                         <Logo
-                          lightSrc={branding.lightTheme?.logoUrl}
-                          darkSrc={branding.darkTheme?.logoUrl}
+                          lightSrc={branding.lightTheme?.logoUrl || "/logo/uyir-logo.svg"}
+                          darkSrc={branding.darkTheme?.logoUrl || branding.lightTheme?.logoUrl || "/logo/uyir-logo.svg"}
                           height={150}
                           width={150}
                         />

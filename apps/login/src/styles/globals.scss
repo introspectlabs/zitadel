@@ -51,3 +51,29 @@ html {
     background-position: -200% 0;
   }
 }
+
+/* Uyir Brand Custom Styles - Using CSS Variables for Theming */
+@layer components {
+  /* Card styling for Uyir brand */
+  .card-uyir {
+    @apply rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-xl;
+  }
+
+  /* Input styling for Uyir brand */
+  .input-uyir {
+    @apply rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 
+           text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500
+           focus:border-primary-light-500 dark:focus:border-primary-dark-500 
+           focus:ring-2 focus:ring-primary-light-500/20 dark:focus:ring-primary-dark-500/20
+           transition-all duration-200;
+  }
+
+  /* Primary button styling for Uyir brand */
+  .btn-uyir-primary {
+    @apply bg-primary-light-500 dark:bg-primary-dark-500 
+           hover:bg-primary-light-400 dark:hover:bg-primary-dark-400
+           text-white 
+           shadow-lg shadow-primary-light-500/30 dark:shadow-primary-dark-500/30
+           transition-all duration-200;
+  }
+}
